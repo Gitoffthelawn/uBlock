@@ -4,10 +4,14 @@ div > p:first-child {
 div > p:last-child {
     margin-bottom: 0;
     }
+/* Set height of HTML and BODY to allow .userFilters height to auto-scale to browser height */
+HTML, BODY {
+    height: 100%;
+    }
 .userFilters {
     box-sizing: border-box;
     font-size: small;
-    height: 60vh;
+    height: calc(100% - 31ex);
     text-align: left;
     white-space: pre;
     width: 100%;
